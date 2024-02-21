@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "26AA9C57559D628DC37831B07DBD9856",
+  "keywordClasses": [
+    {
+      "name": "exe.Login",
+      "keywordMethods": [
+        {
+          "name": "login",
+          "parameters": [],
+          "javadoc": "/**\n\t * Refresh browser\n\t */"
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
