@@ -25,7 +25,12 @@ WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_Swag Labs_u
 
 WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/input_Swag Labs_password'), 'secret_sauce')
 
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Swag Labs/input_Swag Labs_login-button'),0,FailureHandling.OPTIONAL)
+
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/input_Swag Labs_login-button'))
+
+String actualText = WebUI.getText(findTestObject('Object Repository/Page_Swag Labs/div_Sauce Labs Backpack'))
+WebUI.verifyMatch(actualText, 'Sauce Labs Backpack',  false)
 
 WebUI.closeBrowser()
 

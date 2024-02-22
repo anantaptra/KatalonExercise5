@@ -23,11 +23,16 @@ WebUI.navigateToUrl('https://www.saucedemo.com/')
 
 CustomKeywords.'exe.Login.login'()
 
+String actualText = WebUI.getText(findTestObject('Object Repository/Page_Swag Labs/div_Sauce Labs Backpack'))
+WebUI.verifyMatch(actualText, 'Sauce Labs Backpack',  false)
+
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_Add to cart'))
 
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_Add to cart_1'))
 
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/a_2'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Swag Labs/button_Checkout'),0,FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/button_Checkout'))
 
